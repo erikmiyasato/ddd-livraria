@@ -18,7 +18,7 @@ public class TesteLivro {
         meuLivro.editora = novatec;
         meuLivro.preco = 50;
         meuLivro.paginas = 484;
-        meuLivro.tipoCapa = TipoCapaEnum.DURA;
+        //meuLivro.tipoCapa = TipoCapaEnum.DURA;
         meuLivro.resumo = "UML abordagem prática....";
         meuLivro.exibirLivro();
 

@@ -1,3 +1,5 @@
+import javax.swing.plaf.PanelUI;
+
 public class Livro {
     //Atributo tipo nomeAtributo;
     String titulo;
@@ -8,6 +10,15 @@ public class Livro {
     String resumo;
     TipoCapaEnum tipoCapa; //COMUM, DURA, PERSONALIZADA
 
+    //Construtor
+    public Livro(){
+        tipoCapa = TipoCapaEnum.COMUM;
+    }
+
+    public Livro(Editora editora){
+        this.editora = editora;
+        tipoCapa = TipoCapaEnum.COMUM;
+    }
     //Método para exibir o livro
     public void exibirLivro(){
         System.out.println("Livro: " + titulo);
